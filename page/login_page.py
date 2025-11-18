@@ -8,7 +8,7 @@ class LoginPage:
 
     _INPUT_NAME = (By.NAME, 'user-name')
     _INPUT_PASSWORD = (By.NAME, 'password')
-    _LOGIN_BUTTON = (By.NAME, 'login-button-false')
+    _LOGIN_BUTTON = (By.NAME, 'login-button')
 
     def __init__(self , driver):
         self.driver = driver

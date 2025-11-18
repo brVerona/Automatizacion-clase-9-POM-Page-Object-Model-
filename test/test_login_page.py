@@ -5,7 +5,7 @@ from utils.example_csv import get_login_csv
 from utils.faker import get_login_faker
 
 
-@pytest.mark.parametrize("username,password,login_bool",get_login_faker())
+@pytest.mark.parametrize("username,password,login_bool",CASOS_LOGIN)
 def test_login( driver, username , password , login_bool ):
     #crear objeto (instanciarlo)
     loginPage = LoginPage(driver) 
